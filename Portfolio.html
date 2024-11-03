@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Floflo</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script src="app.js" defer ></script>
 </head>
 
 <body>
@@ -64,52 +66,41 @@
             <h2>Mon Expérience Professionnelle</h2>
             <h3>Stage d'expert en construction :</h3>
             <p></p>
+        </section>
 
-            <!-- Section Contact -->
-            <section id="contact">
-                <h2>Contactez-moi</h2>
-                <form id="contact-form">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
+        <section class="MonCV">
+            <h2>Mon CV</h2>
+            <div class="imgContent">
+                <img src="assets/CV/CV-Florence.jpg">
+            </div>
+            <button onclick="downloadCV()">Voici mon CV en PDF : <span> Télécharger</span></button>
+        </section>
 
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form id="contact-form">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="name" required>
 
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-                    <button type="submit">Envoyer</button>
-                </form>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                <!-- Message de statut -->
-                <div id="form-status"></div>
-            </section>
+                <button type="submit">Envoyer</button>
+            </form>
 
-            <!-- Pied de page -->
-            <footer>
-                <p>&copy; 2024 Mon Portfolio</p>
-            </footer>
+            <!-- Message de statut -->
+            <div id="form-status"></div>
+        </section>
 
-            <!-- Script EmailJS -->
-            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-            <script type="text/javascript">
-                (function () {
-                    emailjs.init("UpGo5HVgblR06Ep-b");
-                })();
-            </script>
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; 2024 Mon Portfolio</p>
+        </footer>
 
-            <script type="text/javascript">
-                document.getElementById('contact-form').addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    emailjs.sendForm('service_01onb0n', 'template_zm2deyn', this)
-                        .then(function () {
-                            document.getElementById('form-status').innerHTML = "Message envoyé avec succès!";
-                        }, function (error) {
-                            document.getElementById('form-status').innerHTML = "Échec de l'envoi du message : " + JSON.stringify(error);
-                        });
-                });
-            </script>
 </body>
 
 </html>
