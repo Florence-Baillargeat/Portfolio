@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Floflo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#BTS">BTS SIO</a></li>
+                <li><a href="#Ep">Expérience Professionelle</a></li>
+                <li><a href="#cv">Mon CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h2>Bienvenue</h2>
+        <p>Je m’appelle Florence, j’ai 17 ans et je veux devenir développeuse informatique, étant passionée de jeux
+            vidéos, j’aimerais beaucoup partir dans le développement dans cet aspect là. Je suis en recherche active
+            d’un stage en informatique autour de Valenciennes ou de Bordeaux.</p>
+    </section>
+
+    <!-- Section BTS -->
+    <section id="BTS">
+        <h2>Qu'est ce que le BTS SIO ?</h2>
+        <div class="bts">
+            <p>Tout d'abord, SIO signifie Services Informatiques aux Organisations. Dans ce BTS, on apprend à gérer des
+                systèmes informatiques, à développer des applications et à
+                administrer des réseaux. Ce diplôme nous prépare à des métiers comme technicien informatique,
+                développeur ou administrateur réseau... </p>
+        </div>
+        <div class="bts">
+            <h3>Option SLAM</h3>
+            <p>Le BTS SIO option SLAM forme des professionnels de l'informatique spécialisés dans la création et la
+                maintenance de logiciels. Ils peuvent devenir intégrateurs web, analystes d'applications, gestionnaires
+                de bases de données ou techniciens. Ce diplôme permet aussi de gérer un parc informatique, administrer
+                un réseau, sécuriser des serveurs et installer des équipements. Il facilite l'accès au marché du travail
+                tout en offrant des possibilités de poursuite d'études, comme Concepteur Web, développeur ou chef de
+                projet digital.</p>
+        </div>
+        <div class="bts">
+            <h3>Option SISR</h3>
+            <p>Le BTS SIO option SISR forme des professionnels spécialisés dans la conception et la maintenance des
+                infrastructures réseaux. Ils peuvent devenir techniciens d'infrastructure, systèmes et réseaux, pilotes
+                d'exploitation ou administrateurs réseaux. Ce diplôme permet de maîtriser la sécurité, la maintenance et
+                l'installation des réseaux et équipements informatiques, offrant des missions variées et
+                responsabilisantes dans un secteur en pleine expansion.
+            </p>
+        </div>
+
+        <!-- Section E P -->
+        <section id="Ep">
+            <h2>Mon Expérience Professionnelle</h2>
+            <h3>Stage d'expert en construction :</h3>
+            <p></p>
+
+            <!-- Section Contact -->
+            <section id="contact">
+                <h2>Contactez-moi</h2>
+                <form id="contact-form">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+
+                <!-- Message de statut -->
+                <div id="form-status"></div>
+            </section>
+
+            <!-- Pied de page -->
+            <footer>
+                <p>&copy; 2024 Mon Portfolio</p>
+            </footer>
+
+            <!-- Script EmailJS -->
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("UpGo5HVgblR06Ep-b");
+                })();
+            </script>
+
+            <script type="text/javascript">
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    emailjs.sendForm('service_01onb0n', 'template_zm2deyn', this)
+                        .then(function () {
+                            document.getElementById('form-status').innerHTML = "Message envoyé avec succès!";
+                        }, function (error) {
+                            document.getElementById('form-status').innerHTML = "Échec de l'envoi du message : " + JSON.stringify(error);
+                        });
+                });
+            </script>
+</body>
+
+</html>
