@@ -40,7 +40,7 @@ function downloadCV() {
 function downloadCompt() {
     const link = document.createElement('a');
 
-    link.href = 'assets/Competences/Port-Compt.pdf';
+    link.href = 'assets/Port-Compt.pdf';
     link.download = 'C.pdf';
 
     document.body.appendChild(link);
