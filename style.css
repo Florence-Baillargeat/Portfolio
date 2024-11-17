@@ -115,6 +115,18 @@ section.MonCV button span{
     cursor: pointer;
 }
 
+section.compétences button{
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    /* text-decoration: none; */
+    color: #00d9ff;
+}
+section.compétences button span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #accueil {
     text-align: center;
 }
