@@ -38,7 +38,7 @@ function downloadCV() {
 // Téléchargement Compétences
 
 function downloadCompt() {
-    const link = document.createElement('a');
+    const link = document.createElement('b');
 
     link.href = 'assets/Port-Compt.pdf';
     link.download = 'C.pdf';
