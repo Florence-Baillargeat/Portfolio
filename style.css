@@ -115,7 +115,7 @@ section.MonCV button span{
     cursor: pointer;
 }
 
-section.compétences .imgContent{
+section.compt .imgContent{
     width: 100%;
     display: flex;
     align-items: center;
@@ -123,20 +123,20 @@ section.compétences .imgContent{
     margin: 20px 0;
 }
 
-section.compétences .imgContent img{
+section.compt .imgContent img{
     width: 85%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
 }
 
-section.compétences button{
+section.compt button{
     background: transparent;
     font-size: 15px;
     border: none;
     /* text-decoration: none; */
     color: #00d9ff;
 }
-section.compétences button span{
+section.compt button span{
     text-decoration: underline;
     cursor: pointer;
 }
