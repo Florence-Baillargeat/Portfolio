@@ -41,7 +41,7 @@ function downloadCompt() {
     const link = document.createElement('a');
 
     link.href = 'assets/Competences/Port-Compt.pdf';
-    link.download = 'CV_Florence_Baillargeat.pdf';
+    link.download = 'C.pdf';
 
     document.body.appendChild(link);
     link.click();
