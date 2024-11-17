@@ -12,7 +12,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-        popup("Email envoyé avec succès à melvin.")
+        popup("Email envoyé avec succès à Florence.")
     }, (err) => {
         alert('L\'envoi de l\'email a échoué!\r\n Response:\n ' + JSON.stringify(err));
     });
@@ -21,12 +21,26 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
 });
 
-// Email JS
+// Télechargement CV
 
 function downloadCV() {
     const link = document.createElement('a');
 
     link.href = 'assets/CV/CV.pdf';
+    link.download = 'CV_Florence_Baillargeat.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+// Téléchargement Compétences
+
+function downloadCompt() {
+    const link = document.createElement('a');
+
+    link.href = 'assets/Competences/Port-Compt.pdf';
     link.download = 'CV_Florence_Baillargeat.pdf';
 
     document.body.appendChild(link);
