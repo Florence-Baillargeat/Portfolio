@@ -115,6 +115,32 @@ section.MonCV button span{
     cursor: pointer;
 }
 
+section.MonCV .imgContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+section.MonCV .imgContent img{
+    width: 85%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+section.MonCV button{
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    /* text-decoration: none; */
+    color: #00d9ff;
+}
+section.MonCV button span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #accueil {
     text-align: center;
 }
