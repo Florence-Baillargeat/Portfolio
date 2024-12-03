@@ -24,8 +24,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 // Télechargement CV
 
 function downloadCV() {
+    console.log("Téléchargement en cours...");
     const link = document.createElement('a');
-
     link.href = 'assets/CV/CV.pdf';
     link.download = 'CV_Florence_Baillargeat.pdf';
 
