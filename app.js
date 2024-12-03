@@ -39,7 +39,7 @@ function downloadCV() {
 function downloadCompt() {
     console.log("Téléchargement en cours...");
     const link = document.createElement('a');
-    link.href = 'assets/Port-Compt.pdf';
+    link.href = 'assets/Port-compt.pdf';
     link.download = 'C.pdf';
 
     document.body.appendChild(link);
