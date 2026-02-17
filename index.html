@@ -7,111 +7,225 @@
     <title>Portfolio Floflo</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
-    <script src="app.js" defer ></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#BTS">BTS SIO</a></li>
-                <li><a href="#Ep">Expérience Professionelle</a></li>
-                <li><a href="#VT">Veille Technologique</a></li>
-                <li><a href="#compétences">Portefeuille de compétences</a></li>
-                <li><a href="#cv">Mon CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <span class="header-logo">floflo<span class="accent">_</span>dev</span>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">accueil</a></li>
+                    <li><a href="#BTS">bts sio</a></li>
+                    <li><a href="#Ep">expérience</a></li>
+                    <li><a href="#VT">veille</a></li>
+                    <li><a href="#compétences">compétences</a></li>
+                    <li><a href="#cv">cv</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    
-    <section id="accueil">
-        <h2>Bienvenue</h2>
-        <p>Je m’appelle Florence, j’ai 19 ans et je veux devenir développeuse informatique, étant passionée de jeux
-            vidéos, j’aimerais beaucoup partir dans le développement dans cet aspect là. Mais le développement de logiciels m'intéresse aussi ! Actuellement, je suis en 2ème année de BTS SIO option SLAM.</p>
+   
+    <section id="accueil" class="hero">
+        <div class="hero-left">
+            <p class="section-tag">// 01 — à propos</p>
+            <h2>Bonjour, je suis <span class="accent">Florence</span></h2>
+            <p class="hero-desc">J'ai 19 ans et je veux devenir développeuse. Passionnée de jeux vidéos, j'aimerais travailler dans ce domaine — mais le développement logiciel m'attire tout autant. Actuellement en 2ème année de <strong>BTS SIO option SLAM</strong>.</p>
+            <div class="badges">
+                <span class="badge">BTS SIO SLAM</span>
+                <span class="badge">Dev Web</span>
+                <span class="badge">Game Dev</span>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="terminal-box">
+                <div class="terminal-bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="terminal-title">about.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> whoami</p>
+                    <p class="out">Florence, 19 ans</p>
+                    <p><span class="prompt">$</span> cat passion.txt</p>
+                    <p class="out">Jeux vidéos + Code</p>
+                    <p><span class="prompt">$</span> ls skills/</p>
+                    <p class="out">HTML  CSS  JS  PHP  SQL</p>
+                    <p><span class="prompt">$</span> <span class="cursor-blink">█</span></p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    
+   
     <section id="BTS">
-        <h2>Qu'est ce que le BTS SIO ?</h2>
-        <div class="bts">
-            <p>Tout d'abord, SIO signifie Services Informatiques aux Organisations. Dans ce BTS, on apprend à gérer des
-                systèmes informatiques, à développer des applications et à
-                administrer des réseaux. Ce diplôme nous prépare à des métiers comme technicien informatique,
-                développeur ou administrateur réseau... </p>
-        </div>
-        <div class="bts">
-            <h3>Option SLAM</h3>
-            <p>Le BTS SIO option SLAM forme des professionnels de l'informatique spécialisés dans la création et la
-                maintenance de logiciels. Ils peuvent devenir intégrateurs web, analystes d'applications, gestionnaires
-                de bases de données ou techniciens. Ce diplôme permet aussi de gérer un parc informatique, administrer
-                un réseau, sécuriser des serveurs et installer des équipements. Il facilite l'accès au marché du travail
-                tout en offrant des possibilités de poursuite d'études, comme Concepteur Web, développeur ou chef de
-                projet digital.</p>
+        <div class="asym-grid">
+            <div class="asym-small">
+                <p class="section-tag">// 02 — formation</p>
+                <h2>BTS<br>SIO</h2>
+                <p class="side-note">Services Informatiques aux Organisations</p>
+            </div>
+            <div class="asym-large">
+                <div class="card">
+                    <p>Le BTS SIO forme à la gestion des systèmes informatiques, au développement d'applications et à l'administration de réseaux. Il prépare à des métiers comme technicien informatique, développeur ou administrateur réseau.</p>
+                </div>
+                <div class="card card-accent">
+                    <h3>Option SLAM</h3>
+                    <p>Spécialisée dans la création et la maintenance de logiciels : intégrateur web, analyste d'applications, gestionnaire de bases de données. Le diplôme facilite l'accès au marché du travail et ouvre des poursuites d'études vers Concepteur Web, développeur ou chef de projet digital.</p>
+                </div>
+            </div>
         </div>
     </section>
-        <section id="Ep">
-            <h2>Mon Expérience Professionnelle</h2>
-            <h3>Stage d'expert en construction :</h3>
-            <p>J’ai fait un stage en 3ème avec un expert en construction. Ce stage m’a permis de développer ma
-                relation avec les particuliers et de voir comment gérer une entreprise.</p>
-            <h3>Stage en développement web (1er année BTS) :</h3>
-            <p>J'ai fait un stage chez Nuratec, qui se situe à Douchy les Mines, pour une durée de 6 semaines. Là-bas, j'ai du faire un site web pour les clients de l'entreprise.</p>
-            <h3>Stage en développement web (2ème année BTS) :</h3>
-            <p>Toujours chez Nuratec pour 5 semaines, mais dans une première partie j'ai découvert qu'est ce qu'un cms puis j'ai créer un site pour le gérant de l'entrprise.</p>
-        </section>
 
-        <section class="MonCV" id="cv">
-            <h2>Mon CV</h2>
-            <div class="imgContent">
-                <img src="assets/CV/CV-Florence.jpg">
+    
+    <section id="Ep">
+        <div class="asym-grid reverse">
+            <div class="asym-large">
+                <div class="timeline">
+                    <div class="tl-item">
+                        <div class="tl-date">3ème</div>
+                        <div class="tl-card">
+                            <h3>Expert en construction</h3>
+                            <p>Développement de la relation client et découverte de la gestion d'une entreprise au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-date">BTS 1</div>
+                        <div class="tl-card">
+                            <h3>Nuratec — Douchy-les-Mines</h3>
+                            <p>6 semaines. Création d'un site web complet pour les clients de l'entreprise.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-date">BTS 2</div>
+                        <div class="tl-card">
+                            <h3>Nuratec — Douchy-les-Mines</h3>
+                            <p>5 semaines. Découverte des CMS puis création d'un site pour le gérant de l'entreprise.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button onclick="downloadCV()">Voici mon CV en PDF : <span> Télécharger</span></button>
-        </section>
-
-        <section id="VT">
-            <h2>Ma Veille Technologique :</h2>
-            <h3> Le développement informatique dans la cybersécurité (Attaques et Défenses) :</h3>
-            <ul>
-        <li><a href="https://github.blog/security/" target="_blank">Blog de Sécurité de GitHub</a></li>
-        <li><a href="https://msrc.microsoft.com/blog/categories/msrc/" target="_blank">Blog MSRC de Microsoft</a></li>
-        <li><a href="https://googleprojectzero.blogspot.com/" target="_blank">Google Project Zero</a></li>
-        <li><a href="https://www.reddit.com/r/programming/" target="_blank">Reddit : r/Programming</a></li>
-        </ul>
-        </section>
-
-        <section class="compt" id="compétences">
-            <h2>Portefeuille de compétences</h2>
-            <div class="imgContent">
-                <img src="assets/Port-compt.jpg">
+            <div class="asym-small">
+                <p class="section-tag">// 03 — parcours</p>
+                <h2>Expérience Professionnelle</h2>
             </div>
-            <button onclick="downloadCompt()">Voici le portefeuille de compétences en PDF : <span> Télécharger</span></button>
-        </section>
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <form id="contact-form">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="name" required>
+        </div>
+    </section>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+    
+    <section id="cv" class="MonCV">
+        <div class="asym-grid">
+            <div class="asym-small">
+                <p class="section-tag">// 04 — document</p>
+                <h2>Mon CV</h2>
+                <p class="side-note">Disponible en téléchargement au format PDF.</p>
+                <button onclick="downloadCV()">Télécharger <span class="accent">PDF →</span></button>
+            </div>
+            <div class="asym-large">
+                <div class="imgContent">
+                    <img src="assets/CV/CV-Florence.jpg" alt="CV Florence">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+   
+    <section id="VT">
+        <div class="asym-grid reverse">
+            <div class="asym-large">
+                <div class="vt-grid">
+                    <a href="https://github.blog/security/" target="_blank" class="vt-card">
+                        <span class="vt-icon">GH</span>
+                        <div>
+                            <strong>GitHub Security Blog</strong>
+                            <p>Actualités sécurité GitHub</p>
+                        </div>
+                    </a>
+                    <a href="https://msrc.microsoft.com/blog/categories/msrc/" target="_blank" class="vt-card">
+                        <span class="vt-icon">MS</span>
+                        <div>
+                            <strong>MSRC Microsoft</strong>
+                            <p>Microsoft Security Response</p>
+                        </div>
+                    </a>
+                    <a href="https://googleprojectzero.blogspot.com/" target="_blank" class="vt-card">
+                        <span class="vt-icon">G0</span>
+                        <div>
+                            <strong>Google Project Zero</strong>
+                            <p>Vulnérabilités zero-day</p>
+                        </div>
+                    </a>
+                    <a href="https://www.reddit.com/r/programming/" target="_blank" class="vt-card">
+                        <span class="vt-icon">RD</span>
+                        <div>
+                            <strong>r/Programming</strong>
+                            <p>Communauté dev Reddit</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="asym-small">
+                <p class="section-tag">// 05 — veille</p>
+                <h2>Veille Techno&shy;logique</h2>
+                <p class="side-note">Cybersécurité — Attaques & Défenses</p>
+            </div>
+        </div>
+    </section>
 
-                <button type="submit">Envoyer</button>
-            </form>
+   
+    <section id="compétences" class="compt">
+        <div class="asym-grid">
+            <div class="asym-small">
+                <p class="section-tag">// 06 — document</p>
+                <h2>Portefeuille de compétences</h2>
+                <p class="side-note">Document officiel BTS SIO.</p>
+                <button onclick="downloadCompt()">Télécharger <span class="accent">PDF →</span></button>
+            </div>
+            <div class="asym-large">
+                <div class="imgContent">
+                    <img src="assets/Port-compt.jpg" alt="Portefeuille de compétences">
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div id="form-status"></div>
-        </section>
+    
+    <section id="contact">
+        <div class="asym-grid reverse">
+            <div class="asym-large">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">$ nom</label>
+                            <input type="text" id="nom" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">$ email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">$ message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit">Envoyer <span class="accent">→</span></button>
+                </form>
+                <div id="form-status"></div>
+            </div>
+            <div class="asym-small">
+                <p class="section-tag">// 07 — contact</p>
+                <h2>Contactez-moi</h2>
+                <p class="side-note">Une question ? Un projet ? N'hésitez pas à m'écrire.</p>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2024 Mon Portfolio</p>
-        </footer>
+    <footer>
+        <p class="section-tag">// floflo.dev &copy; 2026</p>
+    </footer>
 
 </body>
-
 </html>
